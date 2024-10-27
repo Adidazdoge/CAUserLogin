@@ -27,5 +27,15 @@ public interface LoginUserDataAccessInterface {
      */
     User get(String username);
 
+    /**
+     * Set the currect user name whom ever loogged in.
+     * @param name name of the user looged in.
+     */
     void setCurrentUser(String name);
+
+    /**
+     * Get the current user, used for the test case aded.
+     * @return user
+     */
+    String getCurrentUser();
 }
